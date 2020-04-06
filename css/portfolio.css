@@ -1,0 +1,52 @@
+/* Sizing and Padding */
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.info{
+    font-size: 4vw;
+}
+
+.container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.projects{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img{
+    max-width: 70%;
+    height: auto;
+    padding: 5px;
+}
+
+/* Anything smaller than first breakpoint 600px */
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Larger Screens */
+@media (min-width: 600px){    
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .projects{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+

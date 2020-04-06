@@ -1,0 +1,30 @@
+/* Sizing and Padding */
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.info{
+    font-size: 4vw;
+}
+
+.container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+/* Anything smaller than first breakpoint 600px */
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Larger Screens */
+@media (min-width: 600px){
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}  
