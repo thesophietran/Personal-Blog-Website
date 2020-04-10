@@ -1,35 +1,94 @@
-/* Sizing and Padding */
-body{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
+/*
+* Header
+*/
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.info{
-    font-size: 4vw;
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.container{
-    padding-left: 10vw;
-    padding-right: 10vw;
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-article{
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+/*
+* Nav bar
+*/
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: scroll;
+    font-style: italic;
 }
 
-/* Anything smaller than first breakpoint 600px */
-.nav-bar{
-    display: flex;
-    flex-direction: column;
+
+/*
+* Main
+*/
+.blog-post {
+    margin-bottom: 4rem;
 }
 
-/* Larger Screens */
-@media (min-width: 600px){
-    .nav-bar{
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.25rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 15%;
+}
+
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+  
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+
+
+/*
+ * Footer
+ */
+ .blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+    .row, .nav {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction: column;
     }
-}  
+
+    .blog-header-logo, .blog-post-title {
+        font-size: 1.75rem;
+    }
+}

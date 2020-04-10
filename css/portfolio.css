@@ -1,52 +1,73 @@
-/* Sizing and Padding */
-body{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
+/*
+* Header
+*/
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.info{
-    font-size: 4vw;
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.container{
-    padding-left: 10vw;
-    padding-right: 10vw;
+.blog-header-logo:hover {
+    text-decoration: none;
 }
 
-.projects{
-    padding-left: 15px;
-    padding-right: 15px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-img{
-    max-width: 70%;
-    height: auto;
-    padding: 5px;
+
+/*
+* Nav bar
+*/
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: scroll;
+    font-style: italic;
 }
 
-/* Anything smaller than first breakpoint 600px */
-.nav-bar{
-    display: flex;
-    flex-direction: column;
+
+/*
+* Main
+*/
+h3 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-.projects{
-    display: flex;
-    flex-direction: column;
+.one-square {
+    padding: 40px;
 }
 
-/* Larger Screens */
-@media (min-width: 600px){    
-    .nav-bar{
+
+/*
+ * Footer
+ */
+ .blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+    .row, .nav {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction: column;
     }
-    
-    .projects{
-        display: grid;
-        grid-template-columns: 50% 50%;
+
+    .blog-header-logo {
+        font-size: 1.75rem;
     }
 }
-
